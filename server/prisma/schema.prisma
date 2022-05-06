@@ -6,7 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  //provider = "sqlite" //Configuração de teste antes de publicar
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
